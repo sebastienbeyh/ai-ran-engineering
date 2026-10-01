@@ -114,7 +114,7 @@ Future material may include original articles and technical analyses addressing 
 
 ## Authors
 
-**Sébastien Beyh, PhD | Khalil Khalifé**
+**Sébastien Beyh, PhD**
 
 Engineer, technology professional and published technical author working across telecommunications, artificial intelligence, energy, cybersecurity and complex technology systems.
 

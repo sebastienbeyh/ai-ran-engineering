@@ -2,7 +2,7 @@
 
 ## Intelligent Radio Networks for 5G and Future 6G
 
-**Sébastien Beyh, PhD**
+**Sébastien Beyh, PhD | Khalil Khalifé**
 
 Published technical book examining the evolution of radio access networks toward increasingly intelligent, AI-enabled architectures for 5G and future 6G systems.
 
@@ -112,9 +112,9 @@ Future material may include original articles and technical analyses addressing 
 
 ---
 
-## Author
+## Authors
 
-**Sébastien Beyh, PhD**
+**Sébastien Beyh, PhD | Khalil Khalifé**
 
 Engineer, technology professional and published technical author working across telecommunications, artificial intelligence, energy, cybersecurity and complex technology systems.
 

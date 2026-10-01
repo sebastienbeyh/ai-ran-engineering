@@ -112,7 +112,7 @@ Future material may include original articles and technical analyses addressing 
 
 ---
 
-## Authors
+## Author
 
 **Sébastien Beyh, PhD**
 

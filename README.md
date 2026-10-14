@@ -2,9 +2,13 @@
 
 ### Intelligent Radio Networks for 5G and Future 6G
 
-Technical portfolio accompanying the book **AI-RAN Engineering** by **Sébastien Beyh, PhD**.
+**Technical portfolio accompanying the book _AI-RAN Engineering_ by Sébastien Beyh, PhD.**
 
-This repository presents the technical themes, engineering concepts and supporting material associated with the evolution of radio access networks toward increasingly intelligent, AI-enabled architectures.
+This repository presents engineering concepts, architectural considerations and technical writing related to the integration of artificial intelligence into radio access networks and the evolution of intelligent telecommunications infrastructure.
+
+The focus is on systems architecture, compute placement, network operations, optimization, orchestration and the engineering constraints that determine whether AI-enabled capabilities can be deployed and operated effectively.
+
+The material is intended for telecommunications engineers, technology professionals, infrastructure architects, technical decision-makers and readers exploring the engineering implications of AI-enabled networks.
 
 ---
 
@@ -12,208 +16,223 @@ This repository presents the technical themes, engineering concepts and supporti
 
 **AI-RAN Engineering: Intelligent Radio Networks for 5G and Future 6G**
 
-The book examines the intersection of artificial intelligence and radio access network engineering, with emphasis on how AI can become increasingly integrated into the design, operation, optimization and evolution of future mobile networks.
+The book examines the intersection of artificial intelligence and radio access network engineering, considering how AI may contribute to network design, operation, optimization and the evolution of future mobile architectures.
 
 Rather than treating AI as an isolated software capability, the subject is approached from an engineering and network-systems perspective.
 
-**[View on Amazon](https://www.amazon.com/dp/B0GX2SLJ85)**
+[**View the book on Amazon**](https://www.amazon.com/dp/B0GX2SLJ85)
 
 ---
 
-# Technical Scope
+## Repository Contents and Navigation
 
-The technical scope includes the relationship between artificial intelligence, radio access networks and future telecommunications infrastructure.
-
-Key areas include:
+This repository brings together technical material on AI-RAN architecture and engineering. Its principal themes include:
 
 - AI-enabled radio access networks
-- 5G and future 6G architectures
-- Intelligent network operations
-- Network automation
+- 5G evolution and future 6G considerations
+- Network intelligence and operational automation
+- Radio resource and network optimization
+- AI and distributed computing
+- Edge computing and compute placement
+- Data, model and orchestration dependencies
+- Reliability, security and operational control
+- Energy efficiency and infrastructure constraints
+
+The objective is to examine how these elements interact as parts of a networked engineering system.
+
+---
+
+## Understanding AI-RAN
+
+AI-RAN is best examined through the relationship between AI capabilities, radio access network functions, computing infrastructure and network operations.
+
+The engineering questions extend beyond selecting or deploying a model. They include where an AI function executes, what data it requires, how its outputs influence network behavior, and how performance, reliability and operational control are maintained.
+
+Different implementations can place AI capabilities in different parts of the network and computing environment. Consequently, AI-RAN should not be treated as one fixed architecture.
+
+Three useful perspectives help distinguish the main relationships:
+
+- **AI for RAN:** AI supports selected radio or network functions, such as analysis, prediction or optimization.
+- **AI and RAN:** AI workloads and RAN workloads may share, coordinate or compete for computing and infrastructure resources, depending on the implementation.
+- **AI on RAN:** The network can provide connectivity and infrastructure capabilities for AI workloads and services.
+
+These perspectives are related, but their objectives, resource requirements and architectural implications differ.
+
+---
+
+## From 5G Toward Future 6G
+
+The evolution of mobile networks raises engineering questions concerning intelligence, programmability, distributed computing, automation, energy efficiency and coordination across network resources.
+
+AI may support selected capabilities in these areas, but its value depends on the deployment context, the quality of the available data, the performance requirements and the reliability of the surrounding system.
+
+Relevant engineering considerations include:
+
+- Integration with existing network functions and operational processes
+- Allocation of computation across centralized, regional and edge environments
+- Coordination between radio, compute and service resources
+- Adaptation to changing traffic and operating conditions
+- Management of latency, reliability and energy constraints
+- Validation of AI-assisted decisions before operational deployment
+
+Future architectural directions should be evaluated against explicit requirements and evidence rather than assumed benefits.
+
+---
+
+## Intelligent Network Operations
+
+AI-enabled approaches can support network monitoring, analysis, prediction, optimization and operational decision-making.
+
+Potential applications include:
+
+- Anomaly detection and performance analysis
+- Traffic and resource forecasting
 - Radio resource optimization
-- Network orchestration
-- Distributed intelligence
-- Edge computing
-- AI-enabled infrastructure
-- Evolution of network architectures
+- Energy-management strategies
+- Operational decision support
+- Automation and orchestration
+
+The degree of automation should be appropriate to the function being performed and the consequences of an incorrect decision.
+
+Where AI outputs influence network behavior, the engineering design must consider validation, monitoring, failure handling, fallback behavior and human or policy-based oversight where required. Closed-loop control is one possible approach, not a universal requirement for every AI-RAN function.
 
 ---
 
-# AI-RAN
+## Network Optimization
 
-AI-RAN represents an important direction in the evolution of mobile network engineering, in which artificial intelligence becomes increasingly integrated into network functions and operational processes.
+Radio and telecommunications networks operate under changing traffic, radio conditions, service requirements and infrastructure constraints.
 
-The engineering challenge extends beyond deploying AI models.
+AI techniques may contribute to optimization involving:
 
-It involves considering how intelligence interacts with:
+- Radio resources and network capacity
+- Traffic distribution and resource allocation
+- Energy consumption and infrastructure utilization
+- Service performance and quality objectives
+- Prediction of changing operational conditions
 
-- Radio access infrastructure
-- Network functions
-- Computing resources
-- Network operations
-- Automation mechanisms
-- Optimization processes
-- Distributed and edge environments
+The practical value of an optimization method depends on the objective being optimized, the quality and representativeness of the data, the constraints imposed on the network, and the ability to measure outcomes reliably.
 
-This systems perspective is central to understanding AI-RAN.
+A technically credible evaluation should distinguish model performance from demonstrated network-level improvement.
 
 ---
 
-# 5G to 6G Evolution
+## Distributed Intelligence and Compute Placement
 
-The transition from 5G toward future 6G architectures introduces increasingly demanding requirements for:
+AI-RAN intersects with distributed computing because AI functions may execute across different computing environments, depending on their requirements and the architecture.
 
-- Network intelligence
-- Automation
-- Distributed computing
-- Real-time optimization
-- Network programmability
-- Service adaptability
-- Energy efficiency
-- Infrastructure coordination
+Relevant considerations include:
 
-AI is therefore relevant not only as an application running over the network, but increasingly as a technology participating in network engineering and operations.
+- Processing location and data locality
+- Compute capacity and resource contention
+- Latency and communication overhead
+- Coordination across distributed functions
+- Availability and fault handling
+- Security boundaries and access control
+- Operational ownership and lifecycle management
 
----
-
-# Intelligent Network Operations
-
-Traditional network management relies heavily on predefined procedures, monitoring and human-directed intervention.
-
-AI-enabled approaches can support more adaptive operational models involving:
-
-- Automated analysis
-- Anomaly detection
-- Predictive approaches
-- Resource optimization
-- Dynamic decision support
-- Automated orchestration
-- Closed-loop operational processes
-
-The engineering objective is not simply automation for its own sake, but improved ability to operate increasingly complex network environments.
+There is no universally optimal compute location. Decisions must reflect the function's latency, throughput, reliability, data-handling and resource requirements.
 
 ---
 
-# Network Optimization
+## AI-RAN as a Systems Architecture
 
-Mobile networks operate under changing traffic, radio, infrastructure and service conditions.
+An AI-enabled telecommunications environment can be examined through several interacting architectural elements.
 
-AI techniques can potentially support optimization activities involving:
+### Radio and Network Infrastructure
 
-- Radio resources
-- Network capacity
-- Traffic distribution
-- Energy consumption
-- Service performance
-- Infrastructure utilization
+Radio access equipment, network functions, connectivity and associated infrastructure resources.
 
-The practical value of such approaches depends on the quality of the underlying data, models, network architecture and operational controls.
+### Compute Infrastructure
 
----
+Centralized, regional and edge computing environments that host network functions, AI workloads or supporting services.
 
-# Distributed Intelligence
+### Data and Observability
 
-Future telecommunications infrastructure is increasingly distributed across centralized, regional, edge and radio environments.
+Operational and performance information used for monitoring, analysis, model development and operational decisions, subject to applicable data-quality and access constraints.
 
-This creates engineering questions concerning:
+### AI Models and Functions
 
-- Where intelligence should be executed
-- Where data should be processed
-- How decisions should be coordinated
-- How latency requirements should be satisfied
-- How distributed resources should be managed
-- How reliability and operational control should be maintained
+Models or AI-based components used for tasks such as prediction, classification, analysis or optimization. Their role and operational authority depend on the implementation.
 
-AI-RAN therefore intersects naturally with edge computing and distributed infrastructure architectures.
+### Orchestration and Control
+
+Mechanisms that coordinate network and computing resources, manage workloads or support operational processes.
+
+### Operations and Assurance
+
+Monitoring, validation, performance evaluation, fault management and lifecycle processes used to maintain the behavior of the deployed system.
+
+The relationships among these elements vary by implementation. A sound architecture makes dependencies, interfaces, responsibilities and failure behavior explicit.
 
 ---
 
-# AI and Network Architecture
+## Engineering Considerations
 
-Integrating AI into telecommunications infrastructure requires consideration of the relationship between:
+### Performance and Latency
 
-**Radio Infrastructure**
+AI functions must be assessed against the requirements of their intended environment, including processing overhead, communication delays and the timing of decisions.
 
-Radio access equipment and associated network resources.
+### Reliability and Failure Handling
 
-**Compute Infrastructure**
+The design should consider model errors, unavailable dependencies, degraded compute resources and appropriate fallback behavior.
 
-Centralized, distributed and edge computing resources supporting network intelligence.
+### Scalability and Resource Management
 
-**Data**
+AI workloads and network functions may compete for computing, memory, storage, bandwidth and energy. Resource allocation must reflect the operational priorities of the system.
 
-Operational, performance and network information used by AI-enabled functions.
+### Security and Data Governance
 
-**AI Models**
-
-Models supporting analysis, prediction, optimization or decision processes.
-
-**Orchestration**
-
-Mechanisms coordinating network, compute and AI resources.
-
-The resulting architecture is an engineering system rather than simply an AI application.
-
----
-
-# Engineering Considerations
-
-AI-enabled telecommunications systems introduce engineering considerations that include:
-
-### Performance
-
-AI functions must operate within the performance requirements of the network environment.
-
-### Reliability
-
-Intelligent systems must operate within appropriate reliability and operational-control frameworks.
-
-### Scalability
-
-AI-enabled functions must accommodate increasingly distributed and heterogeneous infrastructure.
-
-### Security
-
-AI systems and the infrastructure supporting them introduce additional security considerations.
+AI-enabled network environments introduce considerations around data access, model integrity, infrastructure exposure, permissions and operational accountability.
 
 ### Energy Efficiency
 
-Computational requirements must be considered alongside the energy characteristics of telecommunications infrastructure.
+The computational and infrastructure costs of AI should be considered alongside any measured improvement in network energy performance. Benefits should be demonstrated rather than presumed.
 
-### Operational Integration
+### Integration and Lifecycle Management
 
-AI capabilities must fit into existing network operations, management and orchestration processes.
+AI functions must be integrated into the relevant deployment, monitoring, validation, maintenance and change-management processes.
 
----
+### Verification and Operational Validation
 
-# Technical Writing Perspective
-
-This repository also demonstrates an approach to technical writing in which complex emerging technologies are presented through:
-
-- Engineering concepts
-- System architecture
-- Technical relationships
-- Operational considerations
-- Practical engineering implications
-
-The objective is to make sophisticated technical subjects accessible without removing the engineering substance.
+Testing should reflect the intended operating conditions, relevant failure scenarios and measurable acceptance criteria. Laboratory results or model-level metrics alone do not establish operational performance.
 
 ---
 
-# Author
+## Technical Writing Approach
+
+This repository also demonstrates my approach to engineering-oriented technical communication.
+
+The writing emphasizes:
+
+- Clear architectural relationships
+- Defined technical scope and terminology
+- Explicit engineering constraints and trade-offs
+- Distinction between established capabilities and potential applications
+- Careful treatment of assumptions and limitations
+- Structured explanations for technical and professional audiences
+
+The objective is to make complex subjects understandable without removing the engineering detail needed to assess them.
+
+---
+
+## Author
 
 **Sébastien Beyh, PhD**
 
-Engineer, technology professional and published technical author working across telecommunications, artificial intelligence, energy and cybersecurity.
+Engineering professional and published technical author working across telecommunications, artificial intelligence, renewable energy, cybersecurity and complex technology systems.
+
+My technical writing focuses on architecture, system relationships, operational constraints and the engineering implications of emerging technologies.
 
 ---
 
-## Related Repositories
+## Related Work
 
-- **[Technical Writing Portfolio](https://github.com/sebastienbeyh/technical-writing-portfolio)**
-- **[Engineering Writing Samples](https://github.com/sebastienbeyh/engineering-writing-samples)**
-- **[Technical White Papers](https://github.com/sebastienbeyh/technical-white-papers)**
+- [**Engineering Writing Samples**](https://github.com/sebastienbeyh/engineering-writing-samples) - selected technical articles across AI, telecommunications, energy, cybersecurity and engineering systems.
+- [**Technical White Papers**](https://github.com/sebastienbeyh/technical-white-papers) - longer-form technical analysis and architecture-oriented documents.
+- [**Technical Writing Portfolio**](https://github.com/sebastienbeyh/technical-writing-portfolio) - an overview of my technical writing focus and selected work.
+- [**Engineering Cyber Resilience**](https://github.com/sebastienbeyh/engineering-cyber-resilience) - related work on cybersecurity and infrastructure resilience.
+- [**Upwork Profile**](https://www.upwork.com/freelancers/~01b87da47748e9829f) - freelance and contract engagement information.
 
 ---
 
-> **AI-RAN is not simply about adding AI to the network. It is about understanding how intelligence changes the way the network itself can be engineered and operated.**
+> AI-RAN is not simply about adding AI to a network. It requires understanding how intelligence interacts with radio functions, computing resources, data, operational control and the constraints of the network as a whole.
